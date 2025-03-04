@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion Request</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Suvidha Grocery</div>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Support</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container" id="form-container">
+            <h1>Data Deletion Request</h1>
+            <p>We respect your privacy and make it easy to request the deletion of your personal data from our services.</p>
+            
+            <div class="alert-box">
+                <span>🔹 Before You Proceed</span>
+                <p>Please note that this action is permanent and cannot be undone. All your personal data, including account information and activity history, will be permanently deleted from our systems.</p>
+            </div>
+
+            <form id="deletion-form">
+                <label for="full-name">Full Name *</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="reason">Reason for Deletion (Optional)</label>
+                <textarea id="reason" name="reason" placeholder="Please tell us why you want to delete your data"></textarea>
+
+                <button type="submit">Request Data Deletion</button>
+            </form>
+        </section>
+
+        <section class="container hidden" id="success-message">
+            <h1>✅ Request Submitted</h1>
+            <p>Your request for data deletion has been received. We will process your request within 7 business days.</p>
+            <a href="#" class="btn" onclick="resetForm()">Submit Another Request</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Suvidha Grocery. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
